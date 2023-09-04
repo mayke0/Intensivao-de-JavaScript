@@ -14,6 +14,24 @@
     />
   </head>
   <body>
+    <section
+      id="carrinho"
+      class="fixed top-0 right-[0px] bg-indigo-950 h-screen w-[360px] text-slate-200"
+    >
+      <div id="cabecalho-carrinho" class="flex justify-between m-4">
+        <p>Meu carrinho</p>
+        <button id="fechar-carrinho">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+      </div>
+      <section id="produtos-carrinho">
+        <p>Camisa Larga com Bolsos</p>
+        <p>Casaco reto com lã</p>
+        <p>Jaqueta com Efeito Camurça</p>
+      </section>
+      <p id="preco-total">200</p>
+      <button class="bg-slate-200 text-slate-900 p-1">Finalizar compra</button>
+    </section>
     <header class="flex bg-indigo-950 p-2 justify-between">
       <img
         class="h-16"
@@ -21,13 +39,13 @@
         alt="logo do intJavascript."
       />
       <div class="text-slate-200 flex gap-2 items-end mx-2">
-        <button><i class="fa-solid fa-cart-shopping"></i></button>
+        <button id="abrir-carrinho"><i class="fa-solid fa-cart-shopping"></i></button>
         <button><i class="fa-solid fa-user"></i></button>
       </div>
     </header>
     <main>
       <section id="container-produto" class="flex flex-wrap"></section>
     </main>
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
